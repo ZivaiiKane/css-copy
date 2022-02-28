@@ -47,7 +47,7 @@ function Body() {
   ];
 
   return (
-    <div className="w-full h-screen bg-[#fbfbfa] py-36">
+    <div className="w-full bg-[#fbfbfa] py-36">
       <div className="w-full text-center">
         <h1 className="text-5xl font-bold text-[#424444]">
           Here are the services we provide

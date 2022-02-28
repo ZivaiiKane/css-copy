@@ -18,3 +18,14 @@
   grid-template-columns: repeat(3, minmax(250px, 350px));
   justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(1, minmax(250px, 350px));
+    gap: 2rem;
+  }
+
+  .content {
+    grid-template-columns: repeat(1, minmax(250px, 550px));
+  }
+}

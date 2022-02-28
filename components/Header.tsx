@@ -25,7 +25,7 @@ function Header() {
   ];
 
   return (
-    <div className="content w-full h-[calc(100vh-5rem)] bg-[#f3f3f3]">
+    <div className="content w-full bg-[#f3f3f3] pb-40">
       <div className="w-full h-full pt-20 ">
         <div className="h-full">
           <h1 className="text-5xl font-bold text-[#424444] leading-tight">
