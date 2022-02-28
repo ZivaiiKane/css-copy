@@ -5,7 +5,7 @@ function Card(props: any) {
     <div className="px-6 py-10 bg-white rounded-lg">
       <div className="w-full h-16">
         <div
-          className={`w-16 h-16 rounded-full bg-[${colour}] text-white text-center`}
+          className={`w-16 h-16 rounded-full ${colour} text-white text-center`}
         >
           <i className={`my-auto ${icon} fa-xl mt-8`}></i>
         </div>

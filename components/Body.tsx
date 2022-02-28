@@ -10,37 +10,37 @@ function Body() {
   }[] = [
     {
       heading: "Software Development",
-      colour: "#ffb0f7",
+      colour: "bg-[#ffb0f7]",
       icon: "fa-solid fa-magnifying-glass",
       info: "It is a long established fact that a reader will be distracted by the readable content.",
     },
     {
       heading: "System Application",
-      colour: "#ffcea1",
+      colour: "bg-[#ffcea1]",
       icon: "fa-solid fa-microchip",
       info: "It is a long established fact that a reader will be distracted by the readable content.",
     },
     {
       heading: "Network Solutions",
-      colour: "#a0e8ff",
+      colour: "bg-[#a0e8ff]",
       icon: "fa-solid fa-cloud",
       info: "It is a long established fact that a reader will be distracted by the readable content.",
     },
     {
       heading: "AI Systems",
-      colour: "#cab0ff",
+      colour: "bg-[#cab0ff]",
       icon: "fa-solid fa-brain",
       info: "It is a long established fact that a reader will be distracted by the readable content.",
     },
     {
       heading: "Web & App Development",
-      colour: "#ffa1a1",
+      colour: "bg-[#ffa1a1]",
       icon: "fa-solid fa-window-restore",
       info: "It is a long established fact that a reader will be distracted by the readable content.",
     },
     {
       heading: "IT Consultation",
-      colour: "#7bec7f",
+      colour: "bg-[#7bec7f]",
       icon: "fa-regular fa-comments",
       info: "It is a long established fact that a reader will be distracted by the readable content.",
     },
