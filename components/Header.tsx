@@ -1,6 +1,29 @@
 import Step from "./Step";
+import { v4 as uuidv4 } from "uuid";
 
 function Header() {
+  let stepData: {
+    heading: string;
+    info: string;
+    image: string;
+  }[] = [
+    {
+      heading: "Project Discussion",
+      info: "s a long established fact that a reader will be distracted by the readable content.",
+      image: "one",
+    },
+    {
+      heading: "Case Study",
+      info: "s a long established fact that a reader will be distracted by the readable content.",
+      image: "two",
+    },
+    {
+      heading: "Execute Project",
+      info: "s a long established fact that a reader will be distracted by the readable content.",
+      image: "three",
+    },
+  ];
+
   return (
     <div className="content w-full h-[calc(100vh-5rem)] bg-[#f3f3f3]">
       <div className="w-full h-full pt-20 ">
@@ -16,24 +39,14 @@ function Header() {
         </div>
       </div>
       <div className="h-full flex flex-col pt-40">
-        <Step
-          heading="Project Discussion"
-          info="Is a long established fact that a reader will be 
-          distracted by the readable content."
-          image="one"
-        />
-        <Step
-          heading="Case Study"
-          info="Is a long established fact that a reader will be 
-          distracted by the readable content."
-          image="two"
-        />
-        <Step
-          heading="Execute Project"
-          info="Is a long established fact that a reader will be 
-          distracted by the readable content."
-          image="three"
-        />
+        {stepData.map((data) => (
+          <Step
+            heading={data.heading}
+            info={data.info}
+            image={data.image}
+            key={uuidv4()}
+          />
+        ))}
       </div>
     </div>
   );

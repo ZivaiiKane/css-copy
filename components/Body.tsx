@@ -1,4 +1,5 @@
 import Card from "./Card";
+import { v4 as uuidv4 } from "uuid";
 
 function Body() {
   let cardData: {
@@ -56,60 +57,19 @@ function Body() {
         </p>
       </div>
 
-      <div className="cards cards pt-20">
-        {cardData.map((data) => {
+      <div className="cards pt-20">
+        {cardData.map((data) => (
           <Card
             heading={data.heading}
             colour={data.colour}
             icon={data.icon}
             info={data.info}
-          />;
-        })}
+            key={uuidv4()}
+          />
+        ))}
       </div>
     </div>
   );
 }
 
 export default Body;
-
-{
-  /* <Card
-          heading="System Application"
-          colour="#ffcea1"
-          icon="fa-solid fa-microchip"
-          info="It is a long established fact that a reader will be distracted by
-              the readable content."
-        />
-
-        <Card
-          heading="Network Solutions"
-          colour="#a0e8ff"
-          icon="fa-solid fa-cloud"
-          info="  It is a long established fact that a reader will be distracted by
-          the readable content."
-        />
-
-        <Card
-          heading="AI Systems"
-          colour="#cab0ff"
-          icon="fa-solid fa-brain"
-          info="It is a long established fact that a reader will be distracted by
-              the readable content."
-        />
-
-        <Card
-          heading="Web & App Development"
-          colour="#ffa1a1"
-          icon="fa-solid fa-window-restore"
-          info="It is a long established fact that a reader will be distracted by
-              the readable content."
-        />
-
-        <Card
-          heading="IT Consultation"
-          colour="#7bec7f"
-          icon="fa-regular fa-comments"
-          info="It is a long established fact that a reader will be distracted by
-              the readable content."
-        /> */
-}
