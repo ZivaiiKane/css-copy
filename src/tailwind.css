@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .logo {
-  font-family: "Roboto Serif", sans-serif;
+  font-family: 'Roboto Serif', sans-serif;
 }
 
 .content {
@@ -19,6 +19,13 @@
   justify-content: center;
 }
 
+.lower {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(2, minmax(250px, 550px));
+  justify-content: center;
+}
+
 @media screen and (max-width: 600px) {
   .cards {
     grid-template-columns: repeat(1, minmax(250px, 350px));
@@ -27,5 +34,25 @@
 
   .content {
     grid-template-columns: repeat(1, minmax(250px, 550px));
+  }
+
+  .content img {
+    margin: 4rem auto;
+  }
+
+  .content h1 {
+    padding: 0 1rem;
+  }
+
+  .lower {
+    grid-template-columns: repeat(1, minmax(250px, 550px));
+  }
+
+  .lower img {
+    padding: 0 1rem;
+  }
+
+  .lower .info {
+    padding: 0 1.5rem;
   }
 }

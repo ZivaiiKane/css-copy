@@ -1,7 +1,8 @@
-import { Fragment } from "react";
-import Navbar from "../components/Navbar";
-import Header from "../components/Header";
-import Body from "../components/Body";
+import { Fragment } from 'react';
+import Navbar from '../components/Navbar';
+import Header from '../components/Header';
+import Body from '../components/Body';
+import Footer from '../components/Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Header />
       <Body />
+      <Footer />
     </Fragment>
   );
 }
